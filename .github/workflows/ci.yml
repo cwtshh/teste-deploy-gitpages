@@ -1,8 +1,8 @@
 name: ci 
 on:
-  push:
-    branches:
-      - doc
+  pull_request:
+    types: [closed]
+    branches: [doc]
 permissions:
   contents: write
 jobs:
